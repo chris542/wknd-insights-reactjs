@@ -1,0 +1,218 @@
+.wknd-insights-intro {
+    text-align:center;
+
+    h1 {
+        padding: 104px 0 96px;
+    }
+}
+
+//Page body
+.wknd-insights-info {
+    position:relative;
+
+    .body {
+        padding: 0 176px;
+    }
+}
+
+//Insights Panel
+.insights-panel {
+    padding:0;
+    background-color: $color-grey-light-4;
+
+    @media #{$mq-medium-up} {
+        padding:8px 16px;
+
+        &:nth-child(2){
+            padding-top:16px;
+        }
+    }
+
+    .container {
+        padding:0 !important;
+        border-radius:2px;
+        transition: 0.3s box-shadow ease-in-out;
+
+        &:hover {
+            box-shadow: 1px 2px $color-grey-light-1;
+        }
+
+        .headings {
+            background-color: $color-grey-light-5;
+            h3 { margin:0; }
+            p { color: $color-grey-dark; }
+        }
+        .stats {
+            background-color: white;
+
+            .table-head {
+                margin-bottom: 16px;
+
+                p, h5 {
+                    display:inline-block;
+                    margin:0;
+                }
+                h5 { float:right };
+            }
+
+            .ranks {
+                li {
+                    display:flex;
+                    align-items:center;
+                    margin-bottom:8px;
+                    height:40px;
+                    transition:background .2s ease-out;
+                    box-shadow: 0 1px 2px $color-grey-light-1;
+
+                    div {
+                        padding:5px;
+                        line-height: 30px;
+                        p { 
+                            margin:0; 
+                        }
+                    }
+
+                    .title {
+                        position:relative;
+                        flex-grow:1;
+                        padding-left:16px;
+                        p { 
+                            display:block;
+                            max-width:225px;
+                            overflow:hidden;
+                            white-space:nowrap;
+                            text-overflow:ellipsis;
+                        }
+                    }
+                    .share {
+                        flex-grow:0;
+                        padding-right:25px;
+                    }
+                    .week {
+                        width:96px;
+                        min-width:96px;
+                        text-align: center;
+                        @media #{$mq-medium-up} {
+                            display:block;
+                        }
+                        h5 {
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Calendar Icon
+.btn-calendar {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    width:48px;
+    height:48px;
+    padding:0;
+    border-radius:100%;
+    border:none;
+    z-index:2;
+    background-color: $color-blue-mid;
+    cursor:pointer;
+
+    &:focus:not(:disabled),&:active:not(:disabled) {
+        outline : none;
+        background: $color-grey-light-4;
+        @media #{$mq-medium-up} {
+            background: $color-blue-mid;
+        }
+    }
+     &:hover:not(:disabled) {
+        background: $color-blue-light;
+
+        .calendar-insights-icon {
+            fill:#fff;
+        }
+        .tool-tip {
+            max-height:40px;
+            visibility:visible;
+            opacity:1;
+            padding: 5px;
+            color:white;
+        }
+    }
+
+    @media #{$mq-medium-up} {
+        position:absolute;
+        width:40px;
+        height:40px;
+        top:0;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+
+    .calendar-insights-icon {
+        display:block;
+        margin:auto;
+        fill:#fff;
+    }
+
+    .tool-tip {
+        visibility:hidden;
+        opacity:0;
+        max-height:0;
+        width:214px;
+        position: absolute;
+        bottom: calc(100% + 10px);
+        right: 10px;
+        background: $color-charcoal;
+        border-radius: 3px;
+        transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+
+        &:before {
+            position:absolute;
+            content:'';
+            width:10px;
+            height:5px;
+            transform:translateX(-50%);
+            top:100%;
+            right:0;
+            border-left:5px solid transparent;
+            border-right:5px solid transparent;
+            border-top:5px solid $color-charcoal;
+        }
+
+        @media #{$mq-medium-up} {
+            top: calc(100% + 10px);
+            left: 50%;
+            bottom:unset;
+            right:unset;
+            transform:translateX(-50%);
+            &:before {
+                top:unset;
+                bottom:100%;
+                left:50%;
+                border-top:none;
+                border-bottom:5px solid $color-charcoal;
+            }
+        }
+    }
+}
+
+//Twitter Icon
+.tweet-insights {
+    display: inline-block;
+    text-decoration:none;
+
+    .tweet-insights-icon {
+        width:24px;
+        height: 20px;
+        cursor:pointer;
+        color: $color-blue-light; 
+        &:hover {
+            .icon-path { fill: $color-blue-light }
+        }
+        .icon-path {
+            transition: all .3s ease-in;
+        }
+    }
+}

@@ -1,0 +1,136 @@
+h1 {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom:20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @media #{$mq-large-up} {
+        font-size: 48px;
+        line-height: 72px;
+    }
+
+    &.special { //Not used anywhere yet
+        font-size: 36px;
+        line-height: 52px;
+        margin-bottom:20px;
+
+        @media #{$mq-medium-up} {
+            font-size: 42px;
+            line-height: 60px;
+        }
+
+        @media #{$mq-large-up} {
+            font-size: 56px;
+            line-height: 72px;
+        }
+    }
+}
+
+h2 {
+    font-size:20px;
+    line-height: 34px;
+    margin-bottom: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @media #{$mq-large-up} {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+h3 {
+    font-size: 18px;
+    line-height:25px;
+    margin-bottom:20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @media #{$mq-large-up} {
+        font-size:22px;
+        line-height: 32px;
+    }
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @media #{$mq-large-up} {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+h5 {
+    color: $color-grey-dark;
+    font-size:11px;
+    line-height: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @media #{$mq-large-up} {
+        font-size:13px;
+        line-height: 30px;
+    }
+}
+
+p, .body{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom:20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    a:not(.button) {
+        color: $color-link-default;
+        border-bottom: 1px solid transparent;
+        &:hover,
+        &:focus {
+            border-bottom: 1px solid $color-link-default;
+        }
+    }
+
+    .italic {
+        font-style: italic;
+    }
+}
+
+li {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img { //This is for alt-text styling
+    color:$color-grey-dark;
+}
+
+.details {
+    //color: $color-grey-dark;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 4px;
+
+    @media #{$mq-medium-up} {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .insights{ color: $color-blue-mid; }
+    .marketing{ color: $color-coral-dark; }
+    .technology{ color: $color-yellow; }
+    .vibe{ color: $color-blue-mid; }
+    .custom{ color: $color-blue-mid; }
+
+    //To be deprecated
+    .m_cinema{ color: $color-blue-mid; }
+    .m_media{ color: $color-coral-dark; }
+    .m_experts{ color: $color-purple-dark; }
+    .product{ color: $color-purple-dark; }
+}

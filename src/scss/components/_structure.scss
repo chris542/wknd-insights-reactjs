@@ -1,0 +1,86 @@
+body {
+    font-family: $Avenir;
+    color: $color-charcoal;
+    background-color: white;
+    margin:0;
+    padding:0;
+}
+
+.container {
+    position: relative;
+    width:100%;
+    max-width:1024px;
+    margin:auto;
+}
+
+.columns {
+    width: 100%;
+}
+
+.one-col {
+    @extend .columns;
+    .cell {
+        float: none;
+        margin: auto;
+        &:last-of-type {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.two-col,
+.three-col {
+    @extend .columns;
+}
+
+@media #{$mq-medium-up} {
+    .cell {
+        float: left;
+        padding: 25px;
+        
+        &.vertical-5pct-padding{
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+    }
+    .two-col {
+        .cell {
+            width: 50%;
+        }
+        .one-third {
+            width: 41%;
+        }
+        .two-thirds {
+            width: 59%;
+        }
+        .dynamic {
+            width: 80%;
+        }
+    }
+    .three-col{
+        .cell {
+            width: 33%;
+        }
+    }
+}
+
+@media #{$mq-large-up} {
+    .cell {
+        padding: 24px;
+    }
+
+    .two-col {
+        .dynamic {
+            width: 55%;
+        }
+    }
+    .three-col {
+        .cell {
+            width: 33.33%;
+        }
+    }
+}
+
+.grey-bg {
+    background-color: $color-grey-light-4;
+}

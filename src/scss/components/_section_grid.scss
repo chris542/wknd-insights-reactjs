@@ -1,0 +1,191 @@
+//Item Column
+section.section-grid {
+    padding:0;
+
+    .container {
+        width:100%;
+        max-width:1024px;
+        padding:16px 8px;
+        font-size: 0;
+
+        @media #{$mq-medium-up} {
+            padding: 24px 12px;
+        }
+
+        @media #{$mq-large-up} {
+            padding: 32px 8px;
+        }
+
+        &.is-card .cell {
+            padding: 16px;
+        }
+    }
+
+    .cell {
+        float:none;
+        display:inline-block;
+        vertical-align: top;
+        padding:0;
+
+        &.items-header {
+            display:block;
+            width:100%;
+            .col {
+                text-align:center;
+                padding: 32px 24px;
+                
+                @media #{$mq-medium-up} {
+                    padding: 24px 96px;
+                }
+                
+                p:last-child { 
+                    margin-bottom:0; 
+                }
+            }
+        }
+
+    }
+
+    @media #{$mq-medium-only}{
+        .cell {
+            padding : 12px !important;
+        }
+    }
+
+    @media #{$mq-large-up}{
+        &.one-col ,
+        &.two-col {
+            .cell:not(.items-header) {
+                padding :16px !important;
+            }
+        }
+    }
+}
+
+section.section-grid[class*='-bg'] {
+    .is-card .cell {
+        .col {
+            background-color: transparent;
+        } 
+        &:not(.items-header){
+            .col {
+                background-color: #ffffff;
+                color:$color-charcoal;
+            } 
+        }
+    }
+}
+
+//MOBILE ONLY
+@media #{$mq-small-only} {
+    section.section-grid {
+        div[class*='reorder-'] {
+            display:flex;
+            flex-flow:row wrap;
+
+            &.reorder-two-one {
+                $rule : 2 1 3 4 6 5 7 8;
+                .cell:not(.items-header) {
+                    @for $i from 1 through length($rule){
+                        &:nth-child(#{$i}) {
+                            order: nth($rule, $i);
+                        }
+                    }
+                }
+            }
+            &.reorder-four-three {
+                $rule :1 2 4 3 5 6 8 7;
+                .cell:not(.items-header) {
+                    @for $i from 1 through length($rule){
+                        &:nth-child(#{$i}) {
+                            order: nth($rule, $i);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Col 
+section.section-grid {
+    .col {
+        padding:32px 24px;
+
+        .svg-img {
+            position:relative;
+            margin-bottom:32px;
+
+            &.only-svg {
+                margin-bottom:0;
+            }
+            &.svg-img-placeholder{
+                display:none;
+                @media #{$mq-medium-up} {
+                    display:block;
+                    margin-bottom:0;
+                }
+            }
+
+            svg {
+                display:block;
+                max-width:100%;
+            }
+        }
+
+        a {
+            font-size:16px;
+        }
+    }
+    .is-card .cell:not(.items-header) .col {
+        background-color:$color-grey-light-4; 
+    }
+    @media #{$mq-medium-up}{
+        &.one-col {
+            .cell:not(.items-header) {
+                padding :16px !important;
+                .col {
+                    padding:48px 96px;
+                    text-align: center;
+                    //.svg-img, .contents, h3, h4, p{
+                        width:100%;
+                        max-width:none;
+                        text-align: center;
+                    //}
+                }
+            }
+        }
+    }
+    @media #{$mq-large-up}{
+        &.two-col {
+            .col {
+                padding:48px;
+            }
+        }
+        &.three-col {
+            .col {
+                padding:48px;
+            }
+            .is-card {
+                .col {
+                    padding:40px;
+                }
+            }
+        }
+    }
+}
+// End of Col 
+
+//Testimonial
+.testimonial .col {
+    box-shadow:none !important;
+}
+.testimonial-icon {
+    display:block;
+    margin-bottom:32px;
+    @media #{$mq-medium-up} {
+        section.one-col & {
+            margin: 0 auto 32px;
+        }
+    }
+}

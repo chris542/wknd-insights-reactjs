@@ -1,0 +1,126 @@
+// Media Queries
+
+// 0 -> 640px
+$mq-small-range: (0, 40em);
+// 641px -> 1024px
+$mq-medium-range: (40.063em, 64em);
+// 1025px -> 1440px
+$mq-large-range: (64.063em, 90em);
+// 1441px -> infinity
+$mq-xlarge-range: (90.063em);
+$mq-screen: "screen";
+
+@function lower-bound($range) {
+    @if length($range) <= 0 {
+        @return 0;
+    }
+    @return nth($range, 1);
+}
+
+@function upper-bound($range) {
+    @if length($range) < 2 {
+        @return 999999999999;
+    }
+    @return nth($range, 2);
+}
+
+// Usage:
+// Since we are mobile first, we are going from small to big
+// meaning you should nearly always use the "...-up" syntax.
+// For large and xlarge screen:
+// @media #{$mq-large-up}
+// Only on medium screen (tablets)
+// @media #{$mq-medium-only}
+$mq-small-up: $mq-screen;
+$mq-small-only: "#{$mq-screen} and (max-width: #{upper-bound($mq-small-range)})";
+$mq-medium-up: "#{$mq-screen} and (min-width:#{lower-bound($mq-medium-range)})";
+$mq-medium-only: "#{$mq-screen} and (min-width:#{lower-bound($mq-medium-range)}) and (max-width:#{upper-bound($mq-medium-range)})";
+$mq-large-up: "#{$mq-screen} and (min-width:#{lower-bound($mq-large-range)})";
+$mq-large-only: "#{$mq-screen} and (min-width:#{lower-bound($mq-large-range)}) and (max-width:#{upper-bound($mq-large-range)})";
+$mq-xlarge-up: "#{$mq-screen} and (min-width:#{lower-bound($mq-xlarge-range)})";
+$mq-xlarge-only: "#{$mq-screen} and (min-width:#{lower-bound($mq-xlarge-range)}) and (max-width:#{upper-bound($mq-xlarge-range)})";
+
+// Charcoal
+$color-charcoal: #2f3236;
+$color-charcoal-light: #48494a;
+$color-charcoal-dark : #232424;
+
+// Teal
+$color-teal: #28dbcf;
+$color-teal-light: #7de9e2;
+$color-teal-superlight: #ebfbfa;
+
+// Blue
+$color-blue-light: #7fc7f9;
+$color-blue: #0796f9;
+$color-blue-mid: #0b71f0;
+$color-blue-dark: #0954b3;
+
+// Yellow
+$color-yellow-light: #f7cf59;
+$color-yellow: #e8a842;
+$color-yellow-dark: #d87f1a;
+
+//Navy
+$color-navyLight: #4e6382;
+$color-navy: #38475d;
+
+// Coral
+$color-coral-light: #ffa9a4;
+$color-coral: #ff5d54;
+$color-coral-dark: #e63548;
+
+// Aubergine
+$color-aubergine: #83236a;
+
+// Purple
+$color-purple-dark: #502080;
+$color-purple: #ad4cba;
+$color-purple-light: #dbb1e1;
+
+// Green
+$color-green-light: #00eeb2;
+$color-green: #00cc99;
+$color-green-dark: #00866f;
+
+//Emerald
+$color-emerald : #005b6f;
+
+//Grey
+$color-grey-dark: #6d6e70;
+$color-grey-mid: #b3b4b5;
+$color-grey-light-1: #cccdcf;
+$color-grey-light-2: #dedfe0;
+$color-grey-light-3: #ececed;
+$color-grey-light-4: #f1f2f2;
+$color-grey-light-5: #f5f6f7;
+// Links
+$color-link-default: $color-blue-mid;
+$color-link-white-default: $color-blue-light;
+
+
+// Fonts
+$font-path: "./fonts/";
+
+@font-face {
+    font-family: "AvenirLT-Medium";
+    font-display:block;
+    src: url("#{$font-path}32F319_0_0.eot");
+    src: url("#{$font-path}32F319_0_0.eot?#iefix") format("embedded-opentype"),
+    url("#{$font-path}32F319_0_0.woff2") format("woff2"),
+    url("#{$font-path}32F319_0_0.woff") format("woff"),
+    url("#{$font-path}32F319_0_0.ttf") format("truetype");
+}
+$Avenir: AvenirLT-Medium, Avenir, Helvetica, Arial, sans-serif;
+
+$color-body-bg: #ffffff;
+$color-body-copy: $color-charcoal;
+$color-alertRed: #d0021b;
+// Fonts
+$font-family-base: $Avenir !default;
+$font-size-root: 16px !default;
+$font-size-base: 1rem !default;
+$font-weight-normal: normal !default;
+$font-weight-bold: bold !default;
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;

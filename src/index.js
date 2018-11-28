@@ -2,17 +2,21 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
 import Insights from './components/insights';
+import Intro from './components/insights-intro';
+import './scss/main.scss';
 import JSON from './db.json';
+
+const insights = JSON.map((insights, index)=>{
+    return <Insights key={index} insights={insights}/>
+})
 
 class WeekendInsights extends Component {
     render(){
-        const insights = JSON.map((insights, index)=>{
-            return <Insights key={index} insights={insights}/>
-        })
         return (
-            <div>
+            <section className="two-col section-grid weekend-insights">
+                <Intro />
                 {insights}
-            </div>
+            </section>
         )
     }
 
