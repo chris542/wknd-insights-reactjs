@@ -10,12 +10,7 @@ const week_mapping = {
 }
 
 const Rank = ({ranks})=> {
-    let list = [];
-    for (var i = 1, len = 5; i <= len; i++) {
-        let rank = ranks[i];
-        list.push(rank); 
-    }
-    const r = list.map((r,i)=>{
+    const r = ranks.map((r,i)=>{
         const {name, week, share_string } = r;
         const ranking = i + 1;
         return (

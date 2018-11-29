@@ -31,11 +31,7 @@
     .container {
         padding:0 !important;
         border-radius:2px;
-        transition: 0.3s box-shadow ease-in-out;
-
-        &:hover {
-            box-shadow: 1px 2px $color-grey-light-1;
-        }
+        box-shadow: 0 1px 2px $color-grey-light-1;
 
         .headings {
             background-color: $color-grey-light-5;
@@ -100,6 +96,10 @@
                         }
                     }
                 }
+            }
+
+            .donut {
+                text-align: center;
             }
         }
     }
