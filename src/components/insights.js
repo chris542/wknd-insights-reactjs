@@ -16,7 +16,7 @@ class Insights extends React.Component {
         return (
             <div className="insights-panel">
                 <div className="container">
-                    <Header insights={this.props.insights} toggleActive={()=>{this.toggleActive()}}/>
+                    <Header insights={this.props.insights} toggleActive={()=>{this.toggleActive()}} isOpened={this.state.isOpened}/>
                     <Stats insights={this.props.insights} isOpened={this.state.isOpened}/>
                 </div>
             </div>

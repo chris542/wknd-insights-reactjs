@@ -13,7 +13,7 @@ const Header = (props) => {
     const {group, total} = props.insights;
     const {name, range} = group_mapping[group];
     return ( 
-        <div className="headings" onClick={()=>{props.toggleActive()}} >
+        <div className={`headings${(props.isOpened)?" active":""}`} onClick={()=>{props.toggleActive()}} >
             <div className="cell demographic-group">
                 <h3>{name}</h3>
                 <p>{range}</p>

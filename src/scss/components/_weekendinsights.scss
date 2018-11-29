@@ -11,7 +11,11 @@
     position:relative;
 
     .body {
-        padding: 0 176px;
+        padding : 0 32px;
+
+        @media #{$mq-large-up} {
+            padding: 0 176px;
+        }
     }
 }
 
@@ -35,19 +39,41 @@
         overflow:hidden;
 
         .headings {
-            background-color: $color-grey-light-5;
-            h3,p { margin:0; }
-            p { color: $color-grey-dark; }
+            cursor:pointer;
+            background: url(../img/Minus.png) right 25px center / 20px no-repeat $color-grey-light-5;
+            h3, p {
+                margin:0;
+            }
+            .attendance h3, p {
+                opacity:0;
+                transition:0.3s all ease-in-out;
+            }
+            p {
+                color: $color-grey-dark; 
+                max-height:0;
+            }
+            &.active {
+                background: no-repeat url(../img/PlusD.png) right 25px center/ 20px $color-grey-light-5;
+                p, .attendance h3 {
+                    opacity:1;
+                    max-height: 30px;
+                }
+            }
         }
         .stats {
+            display:flex;
+            flex-flow:column nowrap;
             background-color: white;
-            max-height:0px;
-            transition:0.3 max-height ease-in-out;
+            transition:0.3s all ease-in-out;
 
-            &.active {
-                max-height: 340px;
+            @media #{$mq-medium-up} {
+                display:block;
+                max-height:0px;
+
+                &.active {
+                    max-height: 340px;
+                }
             }
-
             .table-head {
                 margin-bottom: 16px;
 
@@ -165,6 +191,7 @@
 
     .tool-tip {
         visibility:hidden;
+        font-size:16px;
         opacity:0;
         max-height:0;
         width:214px;
