@@ -9,11 +9,11 @@ const group_mapping = {
     "50-80m": { "name": "50+ Male", "range": "50 – 80 years" }
 }
 
-const Header = ({insights}) => {
-    const {group, total} = insights;
+const Header = (props) => {
+    const {group, total} = props.insights;
     const {name, range} = group_mapping[group];
     return ( 
-        <div className="headings">
+        <div className="headings" onClick={()=>{props.toggleActive()}} >
             <div className="cell demographic-group">
                 <h3>{name}</h3>
                 <p>{range}</p>

@@ -1,6 +1,6 @@
 import React from 'react';
-import Calendar from './calendar-btn';
-import Twitter from './insights-twitter';
+import Calendar from './intro-calendar-btn';
+import Twitter from './intro-twitter';
 
 const Intro = () => {
     const description = "Elit a laboriosam quos expedita magnam incidunt soluta? Dolores repellendus ut nihil molestiae asperiores, sequi Quae re";

@@ -13,7 +13,7 @@ const Slice = ({ pie, radius, data, colors }) => {
 
     return pie(data).map((slice, index)=>{
         return (
-            <g className="arc" key={index}>
+            <g className="arc" key={index+1}>
                 <path className="donut-outline" key={index} d={outerArc(slice)} fill={colors[index]} />
                 <path d={arc(slice)} fill={colors[index]} />
             </g>

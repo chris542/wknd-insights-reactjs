@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
 import Insights from './components/insights';
-import Intro from './components/insights-intro';
+import Intro from './components/intro';
 import './scss/main.scss';
 import JSON from './db.json';
 

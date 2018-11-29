@@ -32,14 +32,21 @@
         padding:0 !important;
         border-radius:2px;
         box-shadow: 0 1px 2px $color-grey-light-1;
+        overflow:hidden;
 
         .headings {
             background-color: $color-grey-light-5;
-            h3 { margin:0; }
+            h3,p { margin:0; }
             p { color: $color-grey-dark; }
         }
         .stats {
             background-color: white;
+            max-height:0px;
+            transition:0.3 max-height ease-in-out;
+
+            &.active {
+                max-height: 340px;
+            }
 
             .table-head {
                 margin-bottom: 16px;

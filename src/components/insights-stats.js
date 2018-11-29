@@ -12,11 +12,11 @@ const reorderRanks = (ranks) => {
     return list;
 }
 
-const Stats = ({insights}) => {
-    const ranks = reorderRanks(insights.ranks);
+const Stats = (props) => {
+    const ranks = reorderRanks(props.insights.ranks);
 
     return ( 
-        <div className="stats">
+        <div className={`stats${(props.isOpened)?" active":""}`}>
             <Table ranks={ranks} colors={colors}/>
             <Donut ranks={ranks} colors={colors}/>
         </div>

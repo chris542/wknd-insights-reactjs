@@ -1,16 +1,27 @@
 import React from 'react';
-import Header from './panel-header';
-import Stats from './panel-stats';
+import Header from './insights-header';
+import Stats from './insights-stats';
 
-const Insights = ({insights}) => {
-    return (
-        <div className="insights-panel">
-            <div className="container">
-                <Header insights={insights}/>
-                <Stats insights={insights}/>
+class Insights extends React.Component {
+    constructor (props) {
+        super(props);
+        this.state = {
+            isOpened : false,
+        }
+    }
+    toggleActive(e){
+        this.setState({ isOpened: !this.state.isOpened, })
+    }
+    render(){
+        return (
+            <div className="insights-panel">
+                <div className="container">
+                    <Header insights={this.props.insights} toggleActive={()=>{this.toggleActive()}}/>
+                    <Stats insights={this.props.insights} isOpened={this.state.isOpened}/>
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
 };
 
 export default Insights;
