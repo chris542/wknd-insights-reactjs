@@ -1,0 +1,460 @@
+{
+    "weekend-insights" : [
+        {
+            "title":"7 Dec - 9 Dec 2018",
+            "body_text": "This weekend's popularity slate was made up of movies in their third, fourth and fifth weeks, resulting in an unsurprising decrease in attendance across the board. Ralph Breaks The Internet held onto the top spot for younger moviegoers, while 50+ audiences opted for Green Book.",
+            "graph": [
+                {
+                    "week of":"2018-12-07",
+                    "group":"18-30f",
+                    "total":"-34.4%",
+                    "ranks":{
+                        "1":{
+                            "name":"Ralph Breaks the Internet",
+                            "share_string":"18.9",
+                            "share":18.898157594670828,
+                            "week":"Week 3"
+                        },
+                        "2":{
+                            "name":"Dr. Seuss' The Grinch",
+                            "share_string":"13.6",
+                            "share":13.556982536157955,
+                            "week":"Week 5"
+                        },
+                        "3":{
+                            "name":"Fantastic Beasts: The Crimes of Grindelwald",
+                            "share_string":"11.6",
+                            "share":11.630558722919043,
+                            "week":"Week 4"
+                        },
+                        "4":{
+                            "name":"Creed II",
+                            "share_string":"10.1",
+                            "share":10.11822600972214,
+                            "week":"Week 3"
+                        },
+                        "5":{
+                            "name":"Films 5-20",
+                            "share_string":"45.8",
+                            "share":45.796075136530035,
+                            "week":"---"
+                        }
+                    }
+                },
+                {
+                    "week of":"2018-12-07",
+                    "group":"18-30m",
+                    "total":"-34.8%",
+                    "ranks":{
+                        "1":{
+                            "name":"Ralph Breaks the Internet",
+                            "share_string":"17.7",
+                            "share":17.74248750770073,
+                            "week":"Week 3"
+                        },
+                        "2":{
+                            "name":"Creed II",
+                            "share_string":"14.3",
+                            "share":14.340475049626942,
+                            "week":"Week 3"
+                        },
+                        "3":{
+                            "name":"Fantastic Beasts: The Crimes of Grindelwald",
+                            "share_string":"13.0",
+                            "share":13.033061811212265,
+                            "week":"Week 4"
+                        },
+                        "4":{
+                            "name":"Dr. Seuss' The Grinch",
+                            "share_string":"8.5",
+                            "share":8.52214388390718,
+                            "week":"Week 5"
+                        },
+                        "5":{
+                            "name":"Films 5-20",
+                            "share_string":"46.4",
+                            "share":46.36183174755288,
+                            "week":"---"
+                        }
+                    }
+                },
+                {
+                    "week of":"2018-12-07",
+                    "group":"30-50f",
+                    "total":"-28.9%",
+                    "ranks":{
+                        "1":{
+                            "name":"Ralph Breaks the Internet",
+                            "share_string":"19.2",
+                            "share":19.20006704519265,
+                            "week":"Week 3"
+                        },
+                        "2":{
+                            "name":"Dr. Seuss' The Grinch",
+                            "share_string":"16.5",
+                            "share":16.530830312807726,
+                            "week":"Week 5"
+                        },
+                        "3":{
+                            "name":"Creed II",
+                            "share_string":"10.7",
+                            "share":10.658090469106831,
+                            "week":"Week 3"
+                        },
+                        "4":{
+                            "name":"Instant Family",
+                            "share_string":"9.8",
+                            "share":9.809549749628108,
+                            "week":"Week 4"
+                        },
+                        "5":{
+                            "name":"Films 5-20",
+                            "share_string":"43.8",
+                            "share":43.80146242326468,
+                            "week":"---"
+                        }
+                    }
+                },
+                {
+                    "week of":"2018-12-07",
+                    "group":"30-50m",
+                    "total":"-27.7%",
+                    "ranks":{
+                        "1":{
+                            "name":"Ralph Breaks the Internet",
+                            "share_string":"19.2",
+                            "share":19.2080378250591,
+                            "week":"Week 3"
+                        },
+                        "2":{
+                            "name":"Creed II",
+                            "share_string":"13.1",
+                            "share":13.076241134751772,
+                            "week":"Week 3"
+                        },
+                        "3":{
+                            "name":"Fantastic Beasts: The Crimes of Grindelwald",
+                            "share_string":"11.0",
+                            "share":11.00177304964539,
+                            "week":"Week 4"
+                        },
+                        "4":{
+                            "name":"Dr. Seuss' The Grinch",
+                            "share_string":"11.0",
+                            "share":10.989952718676122,
+                            "week":"Week 5"
+                        },
+                        "5":{
+                            "name":"Films 5-20",
+                            "share_string":"45.7",
+                            "share":45.72399527186761,
+                            "week":"---"
+                        }
+                    }
+                },
+                {
+                    "week of":"2018-12-07",
+                    "group":"50-80f",
+                    "total":"-23.4%",
+                    "ranks":{
+                        "1":{
+                            "name":"Green Book",
+                            "share_string":"17.2",
+                            "share":17.21135745659904,
+                            "week":"Week 3"
+                        },
+                        "2":{
+                            "name":"Instant Family",
+                            "share_string":"11.5",
+                            "share":11.49864045178833,
+                            "week":"Week 4"
+                        },
+                        "3":{
+                            "name":"Bohemian Rhapsody",
+                            "share_string":"11.2",
+                            "share":11.211043714704038,
+                            "week":"Week 6"
+                        },
+                        "4":{
+                            "name":"Dr. Seuss' The Grinch",
+                            "share_string":"8.4",
+                            "share":8.434427943944781,
+                            "week":"Week 5"
+                        },
+                        "5":{
+                            "name":"Films 5-20",
+                            "share_string":"51.6",
+                            "share":51.64453043296382,
+                            "week":"---"
+                        }
+                    }
+                },
+                {
+                    "week of":"2018-12-07",
+                    "group":"50-80m",
+                    "total":"-24.0%",
+                    "ranks":{
+                        "1":{
+                            "name":"Green Book",
+                            "share_string":"15.2",
+                            "share":15.243464114108432,
+                            "week":"Week 3"
+                        },
+                        "2":{
+                            "name":"Creed II",
+                            "share_string":"10.4",
+                            "share":10.370398395823086,
+                            "week":"Week 3"
+                        },
+                        "3":{
+                            "name":"Instant Family",
+                            "share_string":"9.7",
+                            "share":9.708297075403882,
+                            "week":"Week 4"
+                        },
+                        "4":{
+                            "name":"Fantastic Beasts: The Crimes of Grindelwald",
+                            "share_string":"9.5",
+                            "share":9.454806855586243,
+                            "week":"Week 4"
+                        },
+                        "5":{
+                            "name":"Films 5-20",
+                            "share_string":"55.2",
+                            "share":55.223033559078345,
+                            "week":"---"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "title":"Second Weekend Insights",
+            "body_text": "This weekend's popularity slate was made up of movies in their third, fourth and fifth weeks, resulting in an unsurprising decrease in attendance across the board. Ralph Breaks The Internet held onto the top spot for younger moviegoers, while 50+ audiences opted for Green Book.",
+            "graph": [
+                {
+                    "ranks":{
+                        "5":{
+                            "name":"Films 5-20",
+                            "week":"---",
+                            "share":28.957898612986376,
+                            "share_string":"29.0"
+                        },
+                        "3":{
+                            "name":"Creed II (Creed 2)",
+                            "week":"Week 1",
+                            "share":16.069718914938015,
+                            "share_string":"16.1"
+                        },
+                        "1":{
+                            "name":"Ralph Breaks the Internet",
+                            "week":"Week 1",
+                            "share":26.66257518104824,
+                            "share_string":"26.7"
+                        },
+                        "2":{
+                            "name":"Fantastic Beasts: The Crimes of Grindelwald",
+                            "week":"Week 2",
+                            "share":18.2202037559838,
+                            "share_string":"18.2"
+                        },
+                        "4":{
+                            "name":"Dr. Seuss' The Grinch",
+                            "week":"Week 3",
+                            "share":10.089603535043576,
+                            "share_string":"10.1"
+                        }
+                    },
+                    "week of":"2018-11-23",
+                    "total":"-6.8%",
+                    "group":"18-30f"
+                },
+                {
+                    "ranks":{
+                        "5":{
+                            "name":"Films 5-20",
+                            "week":"---",
+                            "share":25.748485887327167,
+                            "share_string":"25.7"
+                        },
+                        "3":{
+                            "name":"Fantastic Beasts: The Crimes of Grindelwald",
+                            "week":"Week 2",
+                            "share":17.957947663124216,
+                            "share_string":"18.0"
+                        },
+                        "1":{
+                            "name":"Ralph Breaks the Internet",
+                            "week":"Week 1",
+                            "share":24.42577991086733,
+                            "share_string":"24.4"
+                        },
+                        "2":{
+                            "name":"Creed II (Creed 2)",
+                            "week":"Week 1",
+                            "share":23.757284881727802,
+                            "share_string":"23.8"
+                        },
+                        "4":{
+                            "name":"Robin Hood",
+                            "week":"Week 1",
+                            "share":8.110501656953492,
+                            "share_string":"8.1"
+                        }
+                    },
+                    "week of":"2018-11-23",
+                    "total":"-0.1%",
+                    "group":"18-30m"
+                },
+                {
+                    "ranks":{
+                        "5":{
+                            "name":"Films 5-20",
+                            "week":"---",
+                            "share":28.33215761362491,
+                            "share_string":"28.3"
+                        },
+                        "3":{
+                            "name":"Fantastic Beasts: The Crimes of Grindelwald",
+                            "week":"Week 2",
+                            "share":13.631630219355706,
+                            "share_string":"13.6"
+                        },
+                        "1":{
+                            "name":"Ralph Breaks the Internet",
+                            "week":"Week 1",
+                            "share":28.944203701837484,
+                            "share_string":"28.9"
+                        },
+                        "2":{
+                            "name":"Creed II (Creed 2)",
+                            "week":"Week 1",
+                            "share":15.91991669186066,
+                            "share_string":"15.9"
+                        },
+                        "4":{
+                            "name":"Dr. Seuss' The Grinch",
+                            "week":"Week 3",
+                            "share":13.17209177332124,
+                            "share_string":"13.2"
+                        }
+                    },
+                    "week of":"2018-11-23",
+                    "total":"+50.3%",
+                    "group":"30-50f"
+                },
+                {
+                    "ranks":{
+                        "5":{
+                            "name":"Films 5-20",
+                            "week":"---",
+                            "share":26.384047731197995,
+                            "share_string":"26.4"
+                        },
+                        "3":{
+                            "name":"Fantastic Beasts: The Crimes of Grindelwald",
+                            "week":"Week 2",
+                            "share":14.881457057622862,
+                            "share_string":"14.9"
+                        },
+                        "1":{
+                            "name":"Ralph Breaks the Internet",
+                            "week":"Week 1",
+                            "share":30.621238289632075,
+                            "share_string":"30.6"
+                        },
+                        "2":{
+                            "name":"Creed II (Creed 2)",
+                            "week":"Week 1",
+                            "share":19.219134348668028,
+                            "share_string":"19.2"
+                        },
+                        "4":{
+                            "name":"Dr. Seuss' The Grinch",
+                            "week":"Week 3",
+                            "share":8.89412257287905,
+                            "share_string":"8.9"
+                        }
+                    },
+                    "week of":"2018-11-23",
+                    "total":"+43.1%",
+                    "group":"30-50m"
+                },
+                {
+                    "ranks":{
+                        "5":{
+                            "name":"Films 5-20",
+                            "week":"---",
+                            "share":52.209406666520756,
+                            "share_string":"52.2"
+                        },
+                        "3":{
+                            "name":"Ralph Breaks the Internet",
+                            "week":"Week 1",
+                            "share":10.97480904335646,
+                            "share_string":"11.0"
+                        },
+                        "1":{
+                            "name":"Fantastic Beasts: The Crimes of Grindelwald",
+                            "week":"Week 2",
+                            "share":14.890240966492307,
+                            "share_string":"14.9"
+                        },
+                        "2":{
+                            "name":"Creed II (Creed 2)",
+                            "week":"Week 1",
+                            "share":10.992317961961875,
+                            "share_string":"11.0"
+                        },
+                        "4":{
+                            "name":"Instant Family",
+                            "week":"Week 2",
+                            "share":10.9332253616686,
+                            "share_string":"10.9"
+                        }
+                    },
+                    "week of":"2018-11-23",
+                    "total":"+32.5%",
+                    "group":"50-80f"
+                },
+                {
+                    "ranks":{
+                        "5":{
+                            "name":"Films 5-20",
+                            "week":"---",
+                            "share":48.379877071084984,
+                            "share_string":"48.4"
+                        },
+                        "3":{
+                            "name":"Ralph Breaks the Internet",
+                            "week":"Week 1",
+                            "share":11.494521646178514,
+                            "share_string":"11.5"
+                        },
+                        "1":{
+                            "name":"Fantastic Beasts: The Crimes of Grindelwald",
+                            "week":"Week 2",
+                            "share":15.847140566541958,
+                            "share_string":"15.8"
+                        },
+                        "2":{
+                            "name":"Creed II (Creed 2)",
+                            "week":"Week 1",
+                            "share":13.642437199358632,
+                            "share_string":"13.6"
+                        },
+                        "4":{
+                            "name":"Robin Hood",
+                            "week":"Week 1",
+                            "share":10.636023516835918,
+                            "share_string":"10.6"
+                        }
+                    },
+                    "week of":"2018-11-23",
+                    "total":"+28.7%",
+                    "group":"50-80m"
+                }
+            ]
+        }
+    ]
+}
