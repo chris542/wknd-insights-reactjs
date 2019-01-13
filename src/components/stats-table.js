@@ -16,7 +16,7 @@ const Rank = (props)=> {
         return (
             <li
                 key={ranking}
-                className={props.hoverIndex == i?"active":""}
+                className={`r${ranking} ${props.hoverIndex == i?'active':''}`}
                 onMouseOver={()=>props.onHover(i)}
                 onMouseOut={()=>props.onHoverOut()}
             >

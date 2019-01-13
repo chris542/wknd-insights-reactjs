@@ -84,14 +84,47 @@
                 h5 { float:right };
             }
 
+            $colors-list : (
+                 #0b71f0, #83236a, #e8a842, #28DBCF, #F1F2F2 
+            );
+
+
             .ranks {
                 li {
+                    position:relative;
                     display:flex;
                     align-items:center;
                     margin-bottom:8px;
                     height:40px;
                     transition:background .2s ease-out;
                     box-shadow: 0 1px 2px $color-grey-light-1;
+
+                    @for $i from 1 through length($colors-list){
+                        $c: nth($colors-list, $i);
+                        &.r#{$i} {
+                            &:before {
+                                content:'';
+                                position:absolute;
+                                left:0;
+                                top:0;
+                                width:4px;
+                                height:100%;
+                                background-color:$c;
+                            }
+                            &.active {
+                                background-color:rgba($c, 0.2);
+                            }
+                        }
+                    }
+
+                    &:before{
+                        content:'';
+                        position:absolute;
+                        left:0;
+                        top:0;
+                        width:4px;
+                        height:100%;
+                    }
 
                     div {
                         padding:5px;
@@ -102,9 +135,9 @@
                     }
 
                     .title {
-                        position:relative;
                         flex-grow:1;
                         padding-left:16px;
+
                         p { 
                             display:block;
                             max-width:225px;
