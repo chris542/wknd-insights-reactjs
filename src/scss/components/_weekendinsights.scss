@@ -40,7 +40,7 @@
 
         .headings {
             cursor:pointer;
-            background: url(../img/Minus.png) right 25px center / 20px no-repeat $color-grey-light-5;
+            background: url(../img/PlusD.png) right 25px center / 20px no-repeat $color-grey-light-5;
             h3, p {
                 margin:0;
             }
@@ -53,7 +53,7 @@
                 max-height:0;
             }
             &.active {
-                background: no-repeat url(../img/PlusD.png) right 25px center/ 20px $color-grey-light-5;
+                background: no-repeat url(../img/Minus.png) right 25px center/ 20px $color-grey-light-5;
                 p, .attendance h3 {
                     opacity:1;
                     max-height: 30px;
@@ -133,6 +133,17 @@
 
             .donut {
                 text-align: center;
+
+                .donut-outline { 
+                    opacity:0;
+                    transition: 0.3s opacity ease-in-out;
+
+                }
+                .active {
+                    .donut-outline { 
+                        opacity:1;
+                    }
+                }
             }
         }
     }

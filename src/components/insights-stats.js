@@ -12,15 +12,30 @@ const reorderRanks = (ranks) => {
     return list;
 }
 
-const Stats = (props) => {
-    const ranks = reorderRanks(props.insights.ranks);
+class Stats extends React.Component {
+    state = {
+        hoverIndex : -1
+    }
+    hover = (i) => {
+        this.setState({
+            hoverIndex : i
+        })
+    }
+    hoverOut = () => {
+        this.setState({
+            hoverIndex : -1
+        })
+    }
 
-    return ( 
-        <div className={`stats${(props.isOpened)?" active":""}`}>
-            <Table ranks={ranks} colors={colors}/>
-            <Donut ranks={ranks} colors={colors}/>
-        </div>
-    )
+    render() {
+        const ranks = reorderRanks(this.props.insights.ranks);
+        return (
+            <div className={`stats${(this.props.isOpened)?" active":""}`}>
+                <Table ranks={ranks} colors={colors} onHover={this.hover} onHoverOut={this.hoverOut} hoverIndex={this.state.hoverIndex}/>
+                <Donut ranks={ranks} colors={colors} onHover={this.hover} onHoverOut={this.hoverOut} hoverIndex={this.state.hoverIndex}/>
+            </div>
+        );
+    }
 }
 
 export default Stats;

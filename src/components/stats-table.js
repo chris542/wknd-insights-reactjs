@@ -9,12 +9,17 @@ const week_mapping = {
     "---": "---"
 }
 
-const Rank = ({ranks})=> {
-    const r = ranks.map((r,i)=>{
+const Rank = (props)=> {
+    const r = props.ranks.map((r,i)=>{
         const {name, week, share_string } = r;
         const ranking = i + 1;
         return (
-            <li key={ranking}>
+            <li
+                key={ranking}
+                className={props.hoverIndex == i?"active":""}
+                onMouseOver={()=>props.onHover(i)}
+                onMouseOut={()=>props.onHoverOut()}
+            >
                 <div className="title">
                     <p>{ranking}. {name}</p>
                 </div>
@@ -30,7 +35,7 @@ const Rank = ({ranks})=> {
     return r;
 }
 
-const Table = ({ranks}) => {
+const Table = (props) => {
     return (
         <div className="cell">
             <div className="table-head">
@@ -38,7 +43,7 @@ const Table = ({ranks}) => {
                 <h5>Week of Run</h5>
             </div>
             <ol className="ranks">
-                <Rank ranks={ranks}/>
+                <Rank {...props}/>
             </ol>
         </div>
     )
